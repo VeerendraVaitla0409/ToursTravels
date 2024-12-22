@@ -1,0 +1,16 @@
+import React, { Component } from 'react'
+import MobileEx from './MobileEx'
+
+export default class Mobiles extends Component {
+    render() {
+        return (
+            <div className='mobiles'>
+                <MobileEx model='Buy iPhone 16 Pro Max 256gb Desert Titanium | Get...' price='₹1,44,900.00' store='Imagine Online' path='https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSM1FR1CfiR5cPezp_ZXxal58_qvt3KAH9XWJQC8Gv2pTaq7bxLfLvYAhsdrJyxQ-H-eDepjGphZZtJV4HbnrdG2S1fli9fPgq90XUQD56GnrjdDGTKPz57&usqp=CAE' link='https://www.imagineonline.store/products/iphone-16-pro-mywx3hn-a?variant=44558126907591&country=IN&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&source=google&utm_medium=cpc&utm_campaign=BS_Pmax_16&gad_source=4&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LHA5zyfFN6c9ofw_SoFoeBOyWrmUcU0EHX0qE5YBdhY8eljKNRTePxoCX_sQAvD_BwE'/>
+                <MobileEx model='Apple iPhone 16 Pro Max (256GB, Desert Titanium)' price='₹1,44,900.00' store='Croma' path='https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_85ddpNMaT2c___lrtJIhDkyig1biC2NI48upaSIvRzJ48lbNr_9VAsbUOcxB3_XhyxV6RjUl8z-aGt25o0wMZcY6ayfOu0Q4MzSYP5k-vfBXC3T1tNaRow&usqp=CAE' link='https://www.croma.com/apple-iphone-16-pro-max-256gb-desert-titanium-/p/309746?utm_source=google&utm_medium=ps&utm_campaign=Sok_Standard_Shopping_Rest_Of_The_Category&gad_source=4&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LCx2qbsMeeIXzKvx1qZ6eIGxWJ7e7Lk6lK6THliSQ1IBIxSbRx_-dBoCXugQAvD_BwE'/>
+                <MobileEx model='Apple iPhone 16 Pro Max 256GB Desert Titanium' price='₹1,39,900.00' store='Sangeetha Mobiles' path='https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQHrAFuObrt-7urJQJT-a9Bq4jBv5x0ZZqsV3Ngtg9A-ePMcjHX8yodbTDeGvKuLzg0m8I7kwQ3Wjz0lpRsZDeGrrULujFPskFLFtesWeQ&usqp=CAE' link='https://www.sangeethamobiles.com/product-details/apple-iphone-16-pro-max-256gb-desert-titanium-undefined/17836?gad_source=4&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LIkMHIsX78rAAVWQjXMD6FXB2_42-cfxul1oUYKnTRMitez_uF91JhoCXEgQAvD_BwE'/>
+                <MobileEx model='Apple iPhone 16 Pro Max Sealed Pack' price='₹1,40,600.00' store='Vijay Sales' path='https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ8v62Qx93PCY5zgcG0ZUOMPAewXW2Lndbkj2hXbRANJYYAs2u4BygjAzoABs0kaIHAf_kHHt2I8uyN_kEU_pBiACQ8Yj8H3DZ6OhueOuLEr2ynJu0Z6Vfd&usqp=CAE' link='https://www.vijaysales.com/p/P232318/232316/apple-iphone-16-pro-max-256-gb-storage-black-titanium?utm_source=google_pmax&utm_medium=cpc&utm_campaign=pt-google-vijaysales-EOYS-Apple-pmax-purchase-shopping-na-in-all-15-12-2023&gad_source=4&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LHgfESV9oG46v7Qkpl6tpDOqbvLHbfl77ug_DbEz03wvMt7B1bakURoC_cYQAvD_BwE'/>
+                <MobileEx model='Apple iPhone 16 Pro 512 GB, Desert Titanium' price='₹1,49,900.00' store='Reliance Digital' path='https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSrITELKgyMCcX4kUABzNNsKIbGPwbd5w-L-oXjf7xxb9v9YeEj5NY7vsoc-H_vLr0-Zwy92Y0LTM6b6jf05BSYu8shRkQKMLgxuY49hBZO8rrEYlCFEzvn&usqp=CAE' link='https://www.reliancedigital.in/apple-iphone-16-pro-512-gb-desert-titanium/p/494423053?gad_source=4&gclid=CjwKCAiAgoq7BhBxEiwAVcW0LPpTApywjCtHXGOkEGs_5NnmftDx-a4coitT4spVpueRkSNIOnjP9xoC44AQAvD_BwE'/>
+            </div>
+        )
+    }
+}
