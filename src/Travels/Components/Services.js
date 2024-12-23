@@ -15,7 +15,7 @@ const Services = () => {
                 "id": 1,
                 "name": "Tour Packages",
                 "description": "Our custom travel packages are designed to meet the interests of every traveler. From luxury to budget tours, explore the world with us.",
-                "image": { service1 },
+                "image": service1,
                 "cta_text": "Discover More",
                 "cta_link": "#tour-packages"
             },
@@ -23,7 +23,7 @@ const Services = () => {
                 "id": 2,
                 "name": "Hotel Booking",
                 "description": "From 5-star luxury stays to affordable options, we help you book the perfect hotel for your next vacation.",
-                "image": { service2 },
+                "image": service2,
                 "cta_text": "Book Now",
                 "cta_link": "#hotel-booking"
             },
@@ -31,7 +31,7 @@ const Services = () => {
                 "id": 3,
                 "name": "Car Rentals",
                 "description": "Rent a car from our wide range of vehicles and explore your destination at your own pace. Convenient and affordable options.",
-                "image": { service3 },
+                "image": service3,
                 "cta_text": "Rent a Car",
                 "cta_link": "#car-rentals"
             },
@@ -39,7 +39,7 @@ const Services = () => {
                 "id": 4,
                 "name": "Guided Tours",
                 "description": "Join our expert guides for a personalized and immersive travel experience. Learn about the culture, history, and hidden gems.",
-                "image": { service4 },
+                "image": service4,
                 "cta_text": "Join a Tour",
                 "cta_link": "#guided-tours"
             },
@@ -47,7 +47,7 @@ const Services = () => {
                 "id": 5,
                 "name": "Flight Booking",
                 "description": "We help you find the best flight deals to your favorite destinations. Fast, easy, and reliable flight booking system.",
-                "image": { service5 },
+                "image": service5,
                 "cta_text": "Book a Flight",
                 "cta_link": "#flight-booking"
             },
@@ -55,7 +55,7 @@ const Services = () => {
                 "id": 6,
                 "name": "Travel Insurance",
                 "description": "Secure your travel with our affordable insurance plans. Be covered for unexpected events during your journey.",
-                "image": { service6 },
+                "image": service6,
                 "cta_text": "Get Covered",
                 "cta_link": "#travel-insurance"
             }

@@ -18,7 +18,7 @@ const Packages = () => {
             "duration": "6 Days, 5 Nights",
             "price": 57000,
             "currency": "INR",
-            "image": { package1 },
+            "image": package1,
             "details_url": "https://example.com/packages/golden-triangle-tour"
         },
         {
@@ -28,7 +28,7 @@ const Packages = () => {
             "duration": "5 Days, 4 Nights",
             "price": 41000,
             "currency": "INR",
-            "image": { package2 },
+            "image": package2,
             "details_url": "https://example.com/packages/kerala-backwaters-escape"
         },
         {
@@ -38,7 +38,7 @@ const Packages = () => {
             "duration": "7 Days, 6 Nights",
             "price": 73000,
             "currency": "INR",
-            "image": { package3 },
+            "image": package3,
             "details_url": "https://example.com/packages/rajasthan-royal-heritage"
         },
         {
@@ -48,7 +48,7 @@ const Packages = () => {
             "duration": "4 Days, 3 Nights",
             "price": 32000,
             "currency": "INR",
-            "image": { package4 },
+            "image": package4,
             "details_url": "https://example.com/packages/goa-beach-getaway"
         },
         {
@@ -58,7 +58,7 @@ const Packages = () => {
             "duration": "8 Days, 7 Nights",
             "price": 64000,
             "currency": "INR",
-            "image": { package5 },
+            "image": package5,
             "details_url": "https://example.com/packages/himalayan-adventure"
         },
         {
@@ -68,7 +68,7 @@ const Packages = () => {
             "duration": "3 Days, 2 Nights",
             "price": 24000,
             "currency": "INR",
-            "image":{ package6 },
+            "image":package6,
             "details_url": "https://example.com/packages/spiritual-varanasi-tour"
         }
     ]
