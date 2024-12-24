@@ -46,7 +46,7 @@ const ContactUs = () => {
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <iframe class="embed-responsive-item"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1795821338767!2d-122.47825538468153!3d37.80350367975498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e5d0bc31507%3A0x4780b4fadd727a88!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1634112639373!5m2!1sen!2sus"
-                                        allowfullscreen="" loading="lazy"></iframe>
+                                        allowfullscreen="" loading="lazy" title="Map of the Organization"></iframe>
                                 </div>
                             </div>
                         </div>
