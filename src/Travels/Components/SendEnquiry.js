@@ -31,6 +31,11 @@ export default class SendEnquiry extends Component {
             { id: 5, name: "Flight Booking" },
             { id: 6, name: "Travel Insurance" }
         ];
+
+        // Refs for input fields
+        this.usernameRef = React.createRef();
+        this.mobileRef = React.createRef();
+        this.emailRef = React.createRef();
     }
 
     changeData = (e) => {
@@ -65,56 +70,65 @@ export default class SendEnquiry extends Component {
         const { username, mobile, email, selectedPackage, selectedService } = this.state;
         let formValid = true; // Flag to check if form is valid
 
+        const alphaExp = /^[A-Za-z\s]+$/;
+        const mobileExp = /^(?:\(\d{3}\)\s?|\d{3}[-.\s]?)\d{3}[-.\s]?\d{4}$/;
+        const emailExp = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+
         const nameError = document.getElementById("nameError");
         const mobileError = document.getElementById("mobileError");
         const emailError = document.getElementById("emailError");
         const selectedPackageError = document.getElementById("selectedPackageError");
         const selectedServiceError = document.getElementById("selectedServiceError");
 
-        const alphaExp = /^[A-Za-z\s]+$/;
-        const mobileExp = /^(?:\(\d{3}\)\s?|\d{3}[-.\s]?)\d{3}[-.\s]?\d{4}$/;
-        const emailExp = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+        // Clear all error messages initially
+        this.setState({
+            nameError: "",
+            mobileError: "",
+            emailError: "",
+            selectedPackageError: "",
+            selectedServiceError: "",
+        });
 
         if (username === "") {
             nameError.textContent = "Please enter Name";
             formValid = false;
+            this.usernameRef.current.focus();
+        } else if (!username.match(alphaExp)) {
+            nameError.textContent = "Please enter Name which contains Alphabets";
+            this.usernameRef.current.focus();
+            formValid = false;
         } else {
-            if (username.match(alphaExp)) {
-                nameError.textContent = "";
-            } else {
-                nameError.textContent = "Please enter Name which contains Alphabets";
-                formValid = false;
-            }
+            nameError.textContent = "";
         }
 
-        if (mobile.match(mobileExp)) {
+        if (mobile === "") {
+            mobileError.textContent = "Please Enter Mobile No";
+            this.mobileRef.current.focus();
+            formValid = false;
+        } else if (mobile.length !== 10) {
+            mobileError.textContent = "Please Enter 10 digit Mobile No";
+            this.mobileRef.current.focus();
+            formValid = false;
+        }
+        else if (!mobile.match(mobileExp)) {
+            mobileError.textContent = "Please enter valid Mobile No";
+            this.mobileRef.current.focus();
+            formValid = false;
+        } else {
             mobileError.textContent = "";
-        } else {
-            if (mobile === "") {
-                mobileError.textContent = "Please Enter Mobile No";
-                formValid = false;
-            }
-            else if (mobile.length !== 10) {
-                mobileError.textContent = "Please Enter 10 digit Mobile No";
-                formValid = false;
-            }
-            else {
-                mobileError.textContent = "Please enter valid Mobile No";
-                formValid = false;
-            }
         }
 
-        if (email.match(emailExp)) {
-            emailError.textContent = "";
+        if (mobile === "") {
+            emailError.textContent = "Please Enter Email";
+            this.emailRef.current.focus();
+            formValid = false;
+        }
+        else if (!email.match(emailExp)) {
+            emailError.textContent = "Please enter valid Email Id";
+            this.emailRef.current.focus();
+            formValid = false;
         } else {
-            if (mobile === "") {
-                emailError.textContent = "Please Enter Email";
-                formValid = false;
-            }
-            else {
-                emailError.textContent = "Please enter valid Email Id";
-                formValid = false;
-            }
+            emailError.textContent = "";
         }
 
         if (selectedPackage === "Choose a Package") {
@@ -144,11 +158,11 @@ export default class SendEnquiry extends Component {
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
-                    <input type='text' name='username' placeholder='Enter Name' onChange={this.changeData} value={this.state.username} className=' form-control mb-3' />
+                    <input type='text' name='username' placeholder='Enter Name' onChange={this.changeData} value={this.state.username} className=' form-control mb-3' ref={this.usernameRef} />
                     <p id="nameError"></p>
-                    <input type='text' name='mobile' placeholder='Mobile Number' onChange={this.changeData} value={this.state.mobile} className=' form-control mb-3' />
+                    <input type='text' name='mobile' placeholder='Mobile Number' onChange={this.changeData} value={this.state.mobile} className=' form-control mb-3'  ref={this.mobileRef} />
                     <p id="mobileError"></p>
-                    <input type='text' name='email' placeholder='Email Address' onChange={this.changeData} value={this.state.email} className=' form-control mb-3' />
+                    <input type='text' name='email' placeholder='Email Address' onChange={this.changeData} value={this.state.email} className=' form-control mb-3' ref={this.emailRef} />
                     <p id="emailError"></p>
 
                     <div className="dropdown form-group mb-3">
