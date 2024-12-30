@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo from './assets/logo.png'
 
 const Header = () => {
 
@@ -9,7 +10,13 @@ const Header = () => {
         <div>
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
                 <div class="container">
-                    <Link class="navbar-brand" to="/"><h5>Tours and <span className='text-danger'>Travels</span></h5></Link>
+                    <Link class="navbar-brand" to="/">
+                        <div className="logo-container">
+                            <img src={logo} className="logo" alt="logo" />
+                            <h5>
+                                Tours and<span className="text-danger">Travels</span>
+                            </h5>
+                        </div></Link>
                     <button class="navbar-toggler d-lg-none" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
                         aria-controls="collapsibleNavId" aria-expanded="false"
