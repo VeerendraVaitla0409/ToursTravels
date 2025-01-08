@@ -1,0 +1,38 @@
+.mainBanner {
+    animation-name: swing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.aboutImg{
+    animation-name: tada;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.team-member{
+    width: 150px;
+    height: 150px;
+}
+
+.card-img-top{
+    object-fit: fill;
+}
+
+form p {
+    padding: 0px 10px;
+    color: red;
+}
+
+.logo-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0.8); 
+    transition: filter 0.3s ease;
+}
